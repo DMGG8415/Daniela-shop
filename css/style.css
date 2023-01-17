@@ -1,0 +1,201 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+    /*reset*/
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        font-size: 100%;
+        vertical-align: baseline;
+    }
+
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+
+    body {
+        line-height: 1;
+    }
+
+    ol, ul {
+        list-style: none;
+    }
+
+    blockquote, q {
+        quotes: none;
+    }
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background: #ffffff;
+        text-align: center;
+    }
+
+    header {
+        background: black;
+    }
+
+    .container {
+        background: url("../img/header_background.png") no-repeat center;
+        height: 283px;
+    }
+
+    .wrapper {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header_item {
+        margin: 70px 0 0 0;
+    }
+
+    .contacts {
+        margin: 78px 28px 0 0;
+    }
+
+    .link {
+        color: #edc144;
+        text-decoration: none;
+        border-bottom: 1px dotted #f0cf67;
+    }
+
+    .logo {
+        margin: 28px 0 0 0;
+    }
+
+    .search_bar {
+        margin-top: 10px;
+        width: 100%;
+        position: relative;
+        display: flex;
+
+    }
+
+    .search {
+        position: relative;
+        display: flex;
+        outline: none;
+        opacity: 0.1;
+        font-size: 14px;
+        border: 2px solid #454545;
+        color: black;
+        width: 100%;
+    }
+
+    .search:focus{
+        color: #380136;
+    }
+
+    /*.search:before {*/
+    /*    content: "\f002";*/
+    /*}*/
+
+    .link_in {
+        margin-right: 10px;
+        position: relative;
+    }
+
+    .link_in:after {
+        content: "";
+        width: 1px;
+        height: 18px;
+        position: absolute;
+        background: #f0cf67;
+        left: 45px;
+        top: 5px;
+        z-index: 5;
+    }
+
+    .help_link {
+        margin-top: 9px;
+    }
+
+    .number {
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+        position: relative;
+    }
+
+    .number_item {
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        right: -29px;
+        top: 2px;
+        border: 1px solid #343434;
+        background-color: #202020;
+        /*opacity: 0.25;*/
+        cursor: pointer;
+    }
+
+    .sub_number:before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        top: 6px;
+        right: -23px;
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        transform: rotate(135deg);
+        z-index: 10;
+        pointer-events: none;
+    }
+
+    .number_item:hover .dropdown_contacts {
+        border: 1px solid #edc144;
+        color: #585858;
+        display: block;
+        opacity: 1;
+        top: 100%;
+        right: 0;
+    }
+
+    .number_item:hover {
+    border: 1px solid #edc144;
+    color: #585858;
+    }
+
+    .dropdown_contacts {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 210px;
+    font-size: 18px;
+    opacity: 0;
+    z-index: 1;
+    cursor: default;
+    }
+
+    .sub_number span {
+        font-size: 22px;
+    }
