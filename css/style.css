@@ -400,6 +400,57 @@
     }
 
     .banner {
+        justify-content: space-between;
         max-width: 1024px;
         margin: 40px auto;
+    }
+
+    .first_banner {
+        width: 320px;
+        height: 190px;
+        position: relative;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.45);
+    }
+
+    .first_banner>img {
+        position: relative;
+        top: calc(50% - 90px);
+    }
+
+    .in_banner {
+        background: rgba(0,0,0, 0.5);
+        width: 309px;
+        height: 100px;
+        position: absolute;
+        left: 5px;
+        top: 36%;
+    }
+
+    .in_banner>span {
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        top: 20px;
+    }
+
+    .in_banner>span:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 30px;
+        background: rgba(65, 73, 79, .5);
+    }
+
+    .btn_banner {
+        position: absolute;
+        padding-bottom: 3px;
+        left: calc(50% - 33px);
+        bottom: 16px;
+    }
+
+    .btn_banner:hover {
+        color: white;
+        border-bottom: 1px dotted #fff;
     }
