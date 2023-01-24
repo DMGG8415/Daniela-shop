@@ -902,7 +902,7 @@
         background-image: linear-gradient(to top, #ecbc35 0%, #f2d77c 100%);
     }
 
-    .watch_footer>p {
+    .watch_footer>span {
         right: -15px;
         position: relative;
     }
