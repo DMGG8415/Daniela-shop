@@ -103,23 +103,30 @@
 
     .search {
         outline: none;
+        color: white;
         background: rgba(255, 255, 255, 0.1);
         font-size: 14px;
         border: 2px solid #454545;
         width: 213px;
+        height: 30px;
     }
 
     .search::placeholder {
         color: #ffffff;
     }
 
-    .search_img {
+    .search_bar:before {
+        content: url("../img/search1.png");
         position: absolute;
-        z-index: 1;
-        pointer-events: none;
-        right: 5%;
-        top: calc(50% - 7px);
-        color: #d5bc76;
+        top: 11px;
+        right: 12px;
+    }
+
+    .search_bar:hover:before {
+        content: url("../img/search_gold.png");
+        position: absolute;
+        top: 11px;
+        right: 12px;
     }
 
     .search_bar:hover .search {
@@ -145,13 +152,13 @@
 
     .help_link {
         margin-top: 9px;
+        margin-left: 35px;
     }
 
     .number {
         font-size: 18px;
         font-weight: 400;
         color: white;
-        /*position: relative;*/
     }
 
     .number_item {
@@ -211,7 +218,7 @@
     }
 
     .dropdown_number>li {
-        padding-top: 11px ;
+        padding: 10px ;
     }
 
     .number  span {
@@ -239,11 +246,11 @@
         margin: 0 auto;
     }
 
-    .menu_list li:first-child:before {
+    .menu_list>li:first-child:before {
         content: "";
     }
 
-    .menu_list li:before {
+    .menu_list>li:before {
         content: "\25CB";
         margin-right: 16px;
         color: #4a4a4a;
@@ -269,6 +276,115 @@
         height: 2px;
         top: -21px;
         position: absolute;
+        cursor: auto;
+    }
+
+    .catalog_menu {
+        position: relative;
+    }
+
+    .second_dropdown_catalog {
+        display: none;
+        position: absolute;
+        z-index: 30;
+        opacity: 0;
+        padding-top: 30px;
+    }
+
+    .catalog_menu:hover  .second_dropdown_catalog {
+        display: block;
+        top: 100%;
+        left: 31px;
+        opacity: 1;
+    }
+
+    .dropdown_catalog {
+        background-color: #060606;
+        display: flex;
+        width: 397px;
+        color: #b89b45;
+        background-image: url("../img/catalog_menu_back.png");
+    }
+
+    .dropdown_catalog:before {
+        content: "";
+        position: absolute;
+        /*width: 0px;*/
+        /*height: 0px;*/
+        top: 24px;
+        left: 32px;
+        border-top: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #080808;
+        transform: rotate(135deg);
+    }
+
+    .man_menu {
+        padding: 20px 0 0 40px;
+        width: 118px;
+        font-size: 14px;
+        line-height: 26px;
+        text-align: left;
+        position: relative;
+    }
+
+    .woman_menu {
+        padding: 20px 40px 20px 80px;
+        width: 118px;
+        font-size: 14px;
+        line-height: 26px;
+        text-align: left;
+        position: relative;
+    }
+
+    .man {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .man:before {
+        content: "\25CB";
+        margin-right: 11px;
+        color: #4a4a4a;
+    }
+
+    .man:after {
+        content: "\25CB";
+        margin-left: 11px;
+        color: #4a4a4a;
+    }
+
+    .menu_underline {
+        position: relative;
+    }
+
+    .menu_underline:before {
+        content: "";
+        position: absolute;
+        width: 118px;
+        height: 1px;
+        top: -7px;
+        left: 1px;
+        background-color: #494949;
+    }
+
+    .woman_menu:before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        width: 1px;
+        height: 80%;
+        background-color: #111111;
+    }
+
+    .dropdown_catalog>ul>li>a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .dropdown_catalog>ul>li>a:hover {
+        text-decoration: underline;
     }
 
     .slider {
@@ -709,4 +825,127 @@
 
     .about_company>p {
         margin-bottom: 25px;
+    }
+
+    .online {
+        width: 1024px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    footer {
+        background: #060606;
+    }
+
+    .menu_footer {
+       padding-top: 20px;
+    }
+
+    .active_footer:before {
+        top: 34px;
+    }
+
+    .line_footer {
+        margin-top: 17px;
+    }
+
+    .copyright {
+        color: white;
+        align-self: center;
+        text-align: left;
+        position: relative;
+        line-height: 25px;
+    }
+
+    .copyright_text {
+        display: inline-block;
+    }
+
+    .copyright:before {
+        content: url("../img/copyright.jpg");
+        position: absolute;
+        top: -5px;
+        right: 0;
+    }
+
+    .footer_contacts {
+        color: white;
+        align-self: center;
+        position: relative;
+    }
+
+    .footer_contacts_first {
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    .footer_contacts_second {
+        display: inline-block;
+    }
+
+    .footer_contacts:before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 1px;
+        left: 50%;
+        background: #edc144;
+    }
+
+    .online {
+        text-align: right;
+    }
+
+    .watch_footer {
+        position: relative;
+        background-image: linear-gradient(to top, #ecbc35 0%, #f2d77c 100%);
+    }
+
+    .watch_footer>p {
+        right: -15px;
+        position: relative;
+    }
+
+    .watch_footer:hover {
+        background-image: linear-gradient(to top, #cc0001 0%, #d63334 100%);
+    }
+
+    .watch_footer:before {
+        content: url("../img/speech_bubbles.png");
+        position: absolute;
+        top: calc(50% - 8px);
+        left: 17px;
+    }
+
+    .watch_footer:hover:before {
+        content: url("../img/speech_bubbles_red.png");
+        position: absolute;
+        top: calc(50% - 8px);
+        left: 17px;
+    }
+
+    .basket {
+        position: fixed;
+        right: -50px;
+        top: calc(50% - 78px);
+        transform: rotate(270deg);
+    }
+
+    .basket_button{
+        position: relative;
+    }
+
+    .basket_button:before {
+        content: url(../img/basket.png);
+        position: absolute;
+        top: calc(50% - 10px);
+        left: 17px;
+    }
+
+    .basket_button:hover:before {
+        content: url(../img/basket_red.png);
+        position: absolute;
+        top: calc(50% - 10px);
+        left: 17px;
     }
