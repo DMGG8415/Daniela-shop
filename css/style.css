@@ -62,7 +62,8 @@
 
     .container {
         background: url("../img/header_background.png") no-repeat center;
-        height: 271px;
+        /*height: 271px;*/
+        padding-bottom: 20px;
     }
 
     .wrapper {
@@ -389,7 +390,8 @@
 
     .slider {
         background: url("../img/background_section1.png");
-        height: 525px;
+        /*height: 525px;*/
+        padding-bottom: 238px;
         margin: 0 auto;
         position: relative;
     }
@@ -397,7 +399,8 @@
     .slider_container {
         max-width: 1280px;
         margin: 0 auto;
-        height: 525px;
+        /*height: 525px;*/
+        padding-top: 245px;
         position: relative;
         display: flex;
         justify-content: center;
@@ -487,7 +490,7 @@
         width: 155px;
         height: 39px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.45);
-        background-color: #eec652;
+        background: linear-gradient(to top, #ecbc35 0%, #f2d77c 100%);
         border: 2px solid #c19324;
         /*border: none;*/
         color: #060606;
@@ -509,7 +512,7 @@
     }
 
     .watch:hover {
-        background-color: #d01617;
+        background: #d01617;
         color: white;
         border: 2px solid #a32424;
     }
