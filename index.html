@@ -16,9 +16,9 @@
                         <input class="search" type="text" placeholder="Поиск">
                     </form>
                 </div>
-                <div class="logo">
+                <a href="#" class="logo">
                     <img src="./img/header_logo.svg" alt="Daniela ryale">
-                </div>
+                </a>
                 <div class="contacts">
                     <p class="number">+38 (063) <span>705-92-35</span></p>
                     <div class="number_item">
@@ -35,30 +35,34 @@
                     </div>
                 </div>
             </div>
-            <hr>
+<!--            <hr>-->
         <nav class="menu">
             <ul class="d-flex menu_list">
-                <li><a href="#" class="active">Главная</a></li>
+                <li  class="active"><a href="#">Главная</a></li>
                 <li class="catalog_menu">
                     <a href="#">Каталог</a>
                     <div class="second_dropdown_catalog">
                         <div class="dropdown_catalog">
-                            <ul class="man_menu">
-                                <li class="man">Мужское</li>
-                                <li class="menu_underline"><a href="#">•   Куртки</a></li>
-                                <li><a href="#">•   Пальто</a></li>
-                            </ul>
-                            <ul class="woman_menu">
-                                <li class="man">Женское</li>
-                                <li class="menu_underline"><a href="#">•   Платья</a></li>
-                                <li><a href="#">•   Туники</a></li>
-                                <li><a href="#">•   Пальто</a></li>
-                                <li><a href="#">•   Плащи</a></li>
-                                <li><a href="#">•   Аксессуары</a></li>
-                                <li><a href="#">•   Юбки</a></li>
-                                <li><a href="#">•   Рубашки</a></li>
-                                <li><a href="#">•   Туники</a></li>
-                            </ul>
+                            <div class="man_menu">
+                                <h4 class="man">Мужское</h4>
+                                <ul>
+                                    <li class="menu_underline"><a href="#">•   Куртки</a></li>
+                                    <li><a href="#">•   Пальто</a></li>
+                                </ul>
+                            </div>
+                            <div class="woman_menu">
+                                <h4 class="man">Женское</h4>
+                                <ul>
+                                    <li class="menu_underline"><a href="#">•   Платья</a></li>
+                                    <li><a href="#">•   Туники</a></li>
+                                    <li><a href="#">•   Пальто</a></li>
+                                    <li><a href="#">•   Плащи</a></li>
+                                    <li><a href="#">•   Аксессуары</a></li>
+                                    <li><a href="#">•   Юбки</a></li>
+                                    <li><a href="#">•   Рубашки</a></li>
+                                    <li><a href="#">•   Туники</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -71,18 +75,24 @@
         </div>
     </header>
     <section class="slider">
-        <div class="slider_container">
-            <div class="arrows d-flex">
-                <div class="arrow_left arrow"></div>
-                <div class="arrow_right arrow"></div>
+        <div class="in_slider">
+            <div class="slider_container">
+                <div class="arrows d-flex">
+                    <a href="#" class="arrow_left arrow"></a>
+                    <a href="#"  class="arrow_right arrow"></a>
+                </div>
             </div>
+<!--            <div class="first_slider_content">-->
+                <div class="slider_content">
+                    <h1 class="name">Мужские пальто <span>Daniela Ryale</span></h1>
+                    <a href="#" class="watch">Посмотреть</a>
+                </div>
+<!--            </div>-->
+<!--            <div class="slider_photo">-->
+                <img src="./img/front_man.png" alt="Пальто спереди" class="slider_man_front">
+                <img src="./img/behind.png" alt="Пальто ззади" class="slider_man_behind">
+<!--            </div>-->
         </div>
-        <div class="slider_content">
-            <h3 class="name">Мужские пальто <span>Daniela Ryale</span></h3>
-            <button class="watch">Посмотреть</button>
-        </div>
-        <img src="./img/front_man.png" alt="Пальто спереди" class="slider_man_front">
-        <img src="./img/behind.png" alt="Пальто ззади" class="slider_man_behind">
     </section>
     <section class="banner d-flex">
         <div class="first_banner">
@@ -111,8 +121,8 @@
         <div class="wrapper_hot_deal">
             <h4 class="hot_deal_header">Горячие предложения</h4>
             <div class="arrows_hot_deal d-flex">
-                <div class="arrow_left arrow_hot_deal"></div>
-                <div class="arrow_right_hot_deal arrow_hot_deal"></div>
+                <a  href="#" class="arrow_left arrow_hot_deal"></a>
+                <a  href="#" class="arrow_right_hot_deal arrow_hot_deal"></a>
             </div>
         </div>
         <div class="hot_deal_catalog d-flex">
@@ -158,8 +168,8 @@
         <div class="wrapper_hot_deal">
             <h4 class="hot_deal_header">Новинки</h4>
             <div class="arrows_hot_deal d-flex">
-                <div class="arrow_left arrow_hot_deal"></div>
-                <div class="arrow_right_hot_deal arrow_hot_deal"></div>
+                <a href="#" class="arrow_left arrow_hot_deal"></a>
+                <a href="#" class="arrow_right_hot_deal arrow_hot_deal"></a>
             </div>
         </div>
         <div class="hot_deal_catalog d-flex">
@@ -205,7 +215,7 @@
         <div class="wrapper_hot_deal">
             <h4 class="hot_deal_header">О компании</h4>
         </div>
-        <div class="about_company">
+        <div class="about_company clearfix" >
             <img src="./img/company.jpg" alt="Про компанию">
             <p>Торговая марка Daniela Ryale - стремительно развивающаяся компания, производящая оптом модную мужскую верхнюю одежду .</p>
             <p>Рождение компании Daniela Ryale приходится на начало нового тысячелетия. Нога в ногу со временем, учитывая все тенденции и  инновации в мире моды, мы стараемся на благо наших клиентов. Не важно, будь то единичный розничный покупатель, или крупная оптовая фирма, - работая с нами вы не только приобретете качественный товар, который будет работать Вам во благо, но и получите превосходный, высококлассный сервис.</p>
