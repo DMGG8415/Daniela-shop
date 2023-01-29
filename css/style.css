@@ -61,7 +61,7 @@
     }
 
     .container {
-        background: url("../img/header_background.png") no-repeat center;
+        background: url("../img/header_background.png") repeat-x center;
         /*height: 271px;*/
         padding-bottom: 19px;
     }
@@ -472,10 +472,6 @@
         left: 70px;
     }
 
-    /*.slider_photo {*/
-
-    /*}*/
-
     .name {
         position: relative;
         font-size: 38px;
@@ -624,7 +620,7 @@
         font-size: 26px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-top: 80px;
+        margin-top: 77px;
         margin-bottom: 55px;
         position: relative;
     }
@@ -691,6 +687,10 @@
         max-width: 1024px;
         margin: 0 auto;
         justify-content: space-between;
+    }
+
+    .hot_deal_company {
+        margin-top: 95px;
     }
 
     .title_picture {
@@ -776,6 +776,8 @@
 
     .btn_hot_deal {
         display: none;
+        width: 97px;
+        height: 22px;
     }
 
     .title_picture:hover>.background_coat>.btn_hot_deal {
@@ -851,7 +853,7 @@
     }
 
     .about_company>p {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
     .online {
@@ -865,15 +867,14 @@
     }
 
     .menu_footer {
-       padding-top: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid #414141;
+        padding-bottom: 13px;
     }
 
-    .active_footer:before {
-        top: 34px;
-    }
-
-    .line_footer {
-        margin-top: 17px;
+    .active_footer:after {
+        top: 29px;
+        left: 17px;
     }
 
     .copyright {
@@ -881,7 +882,8 @@
         align-self: center;
         text-align: left;
         position: relative;
-        line-height: 25px;
+        margin: 27px 6px 0 0;
+        line-height: 28px;
     }
 
     .copyright_text {
@@ -899,6 +901,7 @@
         color: white;
         align-self: center;
         position: relative;
+        margin: 17px 11px 0 0;
     }
 
     .footer_contacts_first {
@@ -920,8 +923,22 @@
         background: #edc144;
     }
 
+    .logo_footer {
+        margin: 24px 0 0 -4px;
+    }
+
+    .footer_contacts>div>p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
     .online {
         text-align: right;
+        margin-top: 70px;
+    }
+
+    .container_footer {
+        margin-top: 30px;
     }
 
     .watch_footer {
